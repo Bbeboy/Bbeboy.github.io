@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taqueria Jalisco de Arandas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Taquería Jalisco de Arandas</h1>
+    <p>Tradición y Sabor desde el corazón de México</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#menu-comida">Menú</a>
+    <a href="#paquetes">Paquetes</a>
+    <a href="#platillos">Platillos</a>
+    <a href="#bebidas">Bebidas</a> <!-- Agregado enlace a Bebidas -->
+    <a href="#promociones">Promociones</a>
+    <a href="#contacto">Ubicación</a>
+</nav>
+
+<!-- SECCIÓN DE INICIO -->
+<section id="inicio">
+    <div class="titulo-seccion">
+        <h2>El verdadero sabor tapatío</h2>
+    </div>
+    <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto;">
+        Ven y disfruta de los mejores tacos de la ciudad. Calidad, higiene y ese sabor único que nos distingue.
+        ¡Te esperamos con la familia!
+    </p>
+    <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tacos al Pastor" class="hero-img">
+    <br>
+    <a href="#menu-comida" class="btn-reservar">Ver Menú</a>
+</section>
+
+<!-- MENÚ -->
+<section id="menu-comida">
+    <div class="titulo-seccion">
+        <h2>Nuestro Menú</h2>
+        <p class="subtitulo">Precios por pieza y orden de 3</p>
+    </div>
+
+    <!-- DE LA PARRILLA -->
+    <h3 class="categoria-titulo">De la Parrilla (Tacos)</h3>
+    <p style="text-align:center; color:#666;">Incluyen papas y nopales</p>
+    <div class="grid-productos">
+        <div class="card-producto">
+            <img src="https://jalapenogrills.com/wp-content/uploads/2021/08/queso-taco-600x450.jpg" alt="Tacos con Queso">
+            <div class="info-producto">
+                <h3>Parrilla con Queso</h3>
+                <p>Pastor, Pollo, Costilla o Bistec con queso fundido.</p>
+                <table class="tabla-precio">
+                    <tr><td>Orden de 3</td><td class="precio-valor">$85</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card-producto">
+            <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Tacos Sencillos">
+            <div class="info-producto">
+                <h3>Parrilla Sencilla</h3>
+                <p>Bistec, Costilla, Pastor o Pollo (sin queso).</p>
+                <table class="tabla-precio">
+                    <tr><td>Orden de 3</td><td class="precio-valor">$80</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card-producto">
+            <img src="https://storage.googleapis.com/avena-recipes-v2/2019/10/1571783786062.jpeg" alt="Tacos Individuales">
+            <div class="info-producto">
+                <h3>Por Pieza</h3>
+                <p>Bistec, Costilla o Pastor.</p>
+                <table class="tabla-precio">
+                    <tr><td>Sencillo</td><td class="precio-valor">$33</td></tr>
+                    <tr><td>Con Queso</td><td class="precio-valor">$36</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- PASTOR Y CARNITAS -->
+    <h3 class="categoria-titulo">Pastor y Carnitas</h3>
+    <div class="grid-productos">
+        <div class="card-producto">
+            <img src="https://comedera.com/wp-content/uploads/sites/9/2017/08/tacos-al-pastor-receta.jpg?fit=1316,838&crop=0px,49px,1316px,740px" alt="Pastor">
+            <div class="info-producto">
+                <h3>Pastor Tradicional</h3>
+                <p>El clásico del trompo.</p>
+                <table class="tabla-precio">
+                    <tr><td>Pieza</td><td class="precio-valor">$13</td></tr>
+                    <tr><td>Orden (3)</td><td class="precio-valor">$36</td></tr>
+                    <tr><td>Con Queso (3)</td><td class="precio-valor">$41</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card-producto">
+            <img src="https://hamiltonbeach.com.mx/media/recipes/Tacos%20de%20carnitas.jpg" alt="Carnitas">
+            <div class="info-producto">
+                <h3>Carnitas</h3>
+                <p>Maciza, Costilla, Chamorro, Buche, Cuero, Nana, etc.</p>
+                <table class="tabla-precio">
+                    <tr><td>Pieza</td><td class="precio-valor">$13</td></tr>
+                    <tr><td>Orden (3)</td><td class="precio-valor">$36</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- CABEZA Y VARIADOS -->
+    <h3 class="categoria-titulo">De Cabeza y Variados</h3>
+    <div class="grid-productos">
+        <div class="card-producto">
+            <img src="https://animalgourmet.com/wp-content/uploads/2024/04/tacos-de-lengua-como-se-hacen.jpg" alt="Cabeza de Res">
+            <div class="info-producto">
+                <h3>Cabeza de Res</h3>
+                <p>Surtida, Ojo, Maciza, Molleja, Trompa, Cachete.</p>
+                <table class="tabla-precio">
+                    <tr><td>Pieza</td><td class="precio-valor">$13</td></tr>
+                    <tr><td>Orden (3)</td><td class="precio-valor">$36</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card-producto">
+            <img src="https://www.allrecipes.com/thmb/x93E03q8uVHEbDA3BVfVmk8Z-Ck=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/236880_SlowcookerLenguaBeefTongue_ddmfs_3x4_3766-029340252f3f4d25a6c7dd3dc06ec10b.jpg" alt="Lengua y Sesos">
+            <div class="info-producto">
+                <h3>Especiales</h3>
+                <p>Lengua y Sesos de res.</p>
+                <table class="tabla-precio">
+                    <tr><td>Lengua (3)</td><td class="precio-valor">$60</td></tr>
+                    <tr><td>Sesos (3)</td><td class="precio-valor">$50</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card-producto">
+            <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Suadero y Tripa">
+            <div class="info-producto">
+                <h3>Clásicos (Tortilla Grande)</h3>
+                <p>Suadero, Tripa y Longaniza.</p>
+                <table class="tabla-precio">
+                    <tr><td>Pieza</td><td class="precio-valor">$13</td></tr>
+                    <tr><td>Orden (3)</td><td class="precio-valor">$36</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- HUARACHES -->
+    <h3 class="categoria-titulo">Huaraches al Comal</h3>
+    <div class="grid-productos">
+        <div class="card-producto">
+            <img src="https://www.cocinavital.mx/wp-content/uploads/2017/10/huarache-divorciado.jpg" alt="Huarache Sencillo">
+            <div class="info-producto">
+                <h3>Básicos</h3>
+                <p>Sencillo o con ingredientes extra.</p>
+                <table class="tabla-precio">
+                    <tr><td>Sencillo</td><td class="precio-valor">$40</td></tr>
+                    <tr><td>Con Huevo</td><td class="precio-valor">$55</td></tr>
+                    <tr><td>Con Chorizo</td><td class="precio-valor">$55</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card-producto">
+            <img src="https://images.unsplash.com/photo-1606131731446-5568d87113aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Huarache con Carne">
+            <div class="info-producto">
+                <h3>Con Carne</h3>
+                <p>Pechuga, Bistec, Pastor o Suadero.</p>
+                <table class="tabla-precio">
+                    <tr><td>Sencillo</td><td class="precio-valor">$70</td></tr>
+                    <tr><td>Costilla</td><td class="precio-valor">$80</td></tr>
+                    <tr><td>Combinado</td><td class="precio-valor">$115</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PAQUETES DE KILO  -->
+<section id="paquetes">
+    <div class="titulo-seccion">
+        <h2>Paquetes por Kilo</h2>
+        <p class="subtitulo">Para llevar a casa</p>
+    </div>
+
+    <div class="grid-productos">
+        <div class="card-paquete">
+            <span class="etiqueta-paquete">Familiar</span>
+            <h3>1 Kg de Pastor</h3>
+            <ul class="lista-paquete">
+                <li>1 Kilo de Carne al Pastor</li>
+                <li>Salsas, Verdura, Piña, Limones</li>
+                <li>Tortillas</li>
+            </ul>
+            <div class="precio-paquete">$310</div>
+            <a href="#contacto" class="btn-pedir">Pedir</a>
+        </div>
+
+        <div class="card-paquete">
+            <span class="etiqueta-paquete">Tradicional</span>
+            <h3>1 Kg de Carnitas</h3>
+            <ul class="lista-paquete">
+                <li>1 Kilo de Carnitas a elegir</li>
+                <li>Maciza, Cuerito, Surtida...</li>
+                <li>Salsas y Verduras</li>
+            </ul>
+            <div class="precio-paquete">$310</div>
+            <a href="#contacto" class="btn-pedir">Pedir</a>
+        </div>
+    </div>
+</section>
+
+<!-- PLATILLOS CARNE ASADA -->
+<section id="platillos">
+    <div class="titulo-seccion">
+        <h2>Carne Asada</h2>
+        <p class="subtitulo">Incluyen papas, guarnición y frijoles charros (200g)</p>
+    </div>
+    <div class="grid-productos">
+        <div class="card-producto">
+            <img src="https://www.ajinomoto.com.pe:8085/img/receta/Bisteck.jpg" alt="Bistec Asado">
+            <div class="info-producto">
+                <h3>Bistec</h3>
+                <p>Asado, Encebollado o a la Mexicana.</p>
+                <table class="tabla-precio">
+                    <tr><td>Platillo</td><td class="precio-valor">$95</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card-producto">
+            <img src="https://www.cocinavital.mx/wp-content/uploads/2017/10/huarache-divorciado.jpg" alt="Pechuga">
+            <div class="info-producto">
+                <h3>Pechuga de Pollo</h3>
+                <p>Asada o Empanizada.</p>
+                <table class="tabla-precio">
+                    <tr><td>Platillo</td><td class="precio-valor">$95</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card-producto">
+            <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/d692090/2147483647/strip/true/crop/560x560+220+0/resize/1000x1000!/format/webp/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2020%2F08%2Ftacos-de-cecina-de-res-con-papas-fritas.jpg" alt="Costilla Asada">
+            <div class="info-producto">
+                <h3>Especiales</h3>
+                <p>Cortes premium y cecina.</p>
+                <table class="tabla-precio">
+                    <tr><td>Costilla Asada</td><td class="precio-valor">$105</td></tr>
+                    <tr><td>Cecina</td><td class="precio-valor">$100</td></tr>
+                    <tr><td>Costilla Gratinada</td><td class="precio-valor">$120</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BEBIDAS -->
+<section id="bebidas">
+    <div class="titulo-seccion">
+        <h2>Bebidas</h2>
+        <p class="subtitulo">Para acompañar tus tacos</p>
+    </div>
+    <div class="grid-productos">
+        <div class="card-producto">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/refrescos-portada-1653207586.jpg?crop=1.00xw:0.893xh;0,0" alt="Refrescos">
+            <div class="info-producto">
+                <h3>Refrescos</h3>
+                <p>Coca-Cola, Mundet, Boing de Mango y Guayaba (Vidrio).</p>
+                <table class="tabla-precio">
+                    <tr><td>Botella</td><td class="precio-valor">$25</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card-producto">
+            <img src="https://animalgourmet.com/wp-content/uploads/2020/04/Aguas_frescas_-_panoramio.jpg" alt="Aguas Frescas">
+            <div class="info-producto">
+                <h3>Aguas Frescas</h3>
+                <p>Horchata, Jamaica y Tamarindo. 100% fruta natural.</p>
+                <table class="tabla-precio">
+                    <tr><td>Vaso</td><td class="precio-valor">$25</td></tr>
+                    <tr><td>Litro</td><td class="precio-valor">$45</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card-producto">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Cervezas">
+            <div class="info-producto">
+                <h3>Caguamas</h3>
+                <p>Corona, Victoria, Modelo Especial bien frías.</p>
+                <table class="tabla-precio">
+                    <tr><td>Botella</td><td class="precio-valor">$35</td></tr>
+                    <tr><td>Michelada</td><td class="precio-valor">$55</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROMOCIONES - CUPONES -->
+<section id="promociones">
+    <div class="titulo-seccion">
+        <h2>Promociones</h2>
+    </div>
+
+    <div class="cupon-grid">
+        <div class="cupon-card">
+            <div class="cupon-titulo">3x2 Pastor</div>
+            <div class="cupon-desc">Todos los Martes y Miércoles en tacos al pastor sencillos.</div>
+            <div class="codigo-container">
+                <span class="codigo-texto">PASTOR3X2</span>
+            </div>
+        </div>
+
+        <div class="cupon-card">
+            <div class="cupon-titulo">Refresco Gratis</div>
+            <div class="cupon-desc">En la compra de 1 Kg de Carnitas.</div>
+            <div class="codigo-container">
+                <span class="codigo-texto">KILOYREFRESCO</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO Y MAPA -->
+<section id="contacto">
+    <div class="titulo-seccion">
+        <h2 style="color: white; border-bottom-color: white;">Visítanos</h2>
+    </div>
+
+    <div class="contacto-container">
+        <p style="font-size: 1.2em;">
+            <strong>Dirección:</strong><br>
+            Isabel La Católica 14, Centro Histórico de la Cdad. de México,<br>
+            Centro, Cuauhtémoc, 06000 Ciudad de México, CDMX
+        </p>
+        <p><strong>Horario:</strong> Lunes a Domingo de 10:00 AM a 11:00 PM</p>
+        <p><strong>Teléfono:</strong> 55 1234 5678</p>
+        <p><strong>Email:</strong> contacto@taqueriajalisco.mx</p>
+
+        <!-- MAPA-->
+        <div class="mapa-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.487061524453!2d-99.13848342430232!3d19.43455634061733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9356382b435%3A0x5b6961657fd2a2fb!2sTaqueria%20Jalisco%20de%20Arandas!5e0!3m2!1ses!2smx!4v1764127122626!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/p/Taquer%C3%ADa-Arandas-100063490424588/?locale=es_LA">Facebook</a> | <a href="https://www.instagram.com/taqueria_arandas_oficial/?hl=es">Instagram</a>
+    </div>
+    <p>&copy; 2021 Taquería Jalisco de Arandas. Todos los derechos reservados.</p>
+    <br>
+    <p style="font-size: 0.8em; color: #555;">
+        Desarrollado por: Daniel Herrera Caballero<br>
+        Materia: Programacion Web I - Grupo 1507
+    </p>
+</footer>
+</body>
+</html>

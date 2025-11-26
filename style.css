@@ -1,0 +1,409 @@
+/* --- CONFIGURACIÓN GLOBAL --- */
+html {
+    /* Permite un desplazamiento suave al navegar entre secciones */
+    scroll-behavior: smooth;
+    /* Ajuste para compensar la altura de la barra de navegación fija al hacer scroll */
+    scroll-padding-top: 90px;
+}
+
+body {
+    /* Fuente principal y reseteo de márgenes básicos */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfbf7; /* Color de fondo crema suave */
+    color: #333333; /* Texto gris oscuro para legibilidad */
+    line-height: 1.6;
+}
+
+/* --- ENCABEZADO PRINCIPAL (HEADER) --- */
+header {
+    background-color: #ce1126; /* Fondo rojo base */
+    padding: 50px 20px;
+    text-align: center;
+    /* Superposición de degradado rojo sobre una textura de imagen */
+    background-image: linear-gradient(rgba(206, 17, 38, 0.9), rgba(206, 17, 38, 0.9)), url('https://www.transparenttextures.com/patterns/concrete-wall.png');
+    color: white;
+    border-bottom: 5px solid #fff; /* Borde inferior decorativo */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    /* Sombra en el texto para destacar sobre el fondo rojo */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+header p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffda00; /* Texto secundario en amarillo */
+}
+
+/* --- BARRA DE NAVEGACIÓN (STICKY NAV) --- */
+nav {
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra suave para efecto flotante */
+    /* Posicionamiento 'sticky' para fijar el menú en la parte superior al hacer scroll */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
+    border-bottom: 4px solid #006847; /* Borde verde patrio */
+    height: 60px;
+    /* Flexbox para centrar vertical y horizontalmente los enlaces */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #444;
+    text-decoration: none;
+    padding: 0 22px;
+    line-height: 60px; /* Centrado vertical del texto */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.2s, background-color 0.2s; /* Transición suave para hover */
+    border-bottom: 3px solid transparent;
+    height: 100%;
+}
+
+/* Estado Hover: Efectos al pasar el mouse sobre los enlaces del menú */
+nav a:hover {
+    color: #ce1126; /* Texto rojo */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    border-bottom-color: #ce1126; /* Subrayado rojo */
+}
+
+/* --- ESTILOS GENERALES DE SECCIONES --- */
+section {
+    padding: 60px 20px;
+    max-width: 1100px; /* Ancho máximo para contener el contenido */
+    margin: 0 auto; /* Centrado horizontal del contenedor */
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-seccion h2 {
+    color: #ce1126;
+    font-size: 32px;
+    display: inline-block;
+    border-bottom: 3px solid #006847; /* Subrayado decorativo verde */
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+/* --- SECCIÓN INICIO --- */
+#inicio {
+    text-align: center;
+    background-color: #fff;
+    padding-top: 40px;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.btn-reservar {
+    background-color: #006847; /* Fondo verde */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-reservar:hover {
+    background-color: #004e35; /* Verde más oscuro al pasar el mouse */
+}
+
+/* --- SECCIÓN HISTORIA (Estilos genéricos) --- */
+#nosotros {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.historia-texto {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* --- SECCIÓN MENÚ DE COMIDA --- */
+.categoria-titulo {
+    color: #fff;
+    background-color: #ce1126; /* Fondo rojo para encabezados de categoría */
+    padding: 10px 20px;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* GRID SYSTEM PARA PRODUCTOS */
+.grid-productos {
+    display: grid;
+    /* Crea columnas automáticas adaptables (responsive) */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px; /* Espacio entre tarjetas */
+}
+
+/* Estilos de la tarjeta (Card) individual */
+.card-producto {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-producto:hover {
+    border-color: #ce1126; /* Cambio de borde al pasar el mouse */
+}
+
+.card-producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.info-producto {
+    padding: 20px;
+}
+
+.info-producto h3 {
+    margin: 0 0 10px 0;
+    color: #ce1126;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.info-producto p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Tabla interna de precios */
+.tabla-precio {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.tabla-precio td {
+    padding: 5px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.precio-valor {
+    text-align: right;
+    font-weight: bold;
+    color: #006847;
+    font-size: 1.1em;
+}
+
+/* --- SECCIÓN PAQUETES --- */
+#paquetes {
+    background-color: #f2f2f2; /* Fondo gris claro */
+}
+
+.card-paquete {
+    background: white;
+    border: 2px solid #006847; /* Borde verde destacado */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.etiqueta-paquete {
+    background-color: #ce1126;
+    color: white;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-radius: 20px; /* Estilo de píldora */
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.card-paquete h3 {
+    font-size: 24px;
+    color: #006847;
+    margin-top: 0;
+}
+
+.lista-paquete {
+    list-style: none; /* Elimina viñetas predeterminadas */
+    padding: 0;
+    margin: 20px 0;
+    color: #555;
+}
+
+.lista-paquete li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.precio-paquete {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-pedir {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ce1126;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-pedir:hover {
+    background-color: #a30015;
+}
+
+/* --- SECCIÓN PROMOCIONES (CUPONES) --- */
+#promociones {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.cupon-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no hay espacio */
+    justify-content: center;
+    gap: 30px;
+}
+
+.cupon-card {
+    background-color: #fff5f5; /* Fondo rojizo muy tenúe */
+    border: 3px dashed #ce1126; /* Borde punteado característico de cupones */
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.cupon-card:hover {
+    background-color: #ffe0e0;
+}
+
+.cupon-titulo {
+    color: #ce1126;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cupon-desc {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.codigo-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.codigo-texto {
+    font-family: 'Courier New', monospace; /* Fuente monoespaciada para el código */
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.small-print {
+    font-size: 0.7em;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* --- GALERÍA (Estilos auxiliares) --- */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* --- SECCIÓN CONTACTO Y FOOTER --- */
+#contacto {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: white;
+    padding: 40px 20px;
+}
+
+.contacto-container {
+    text-align: center;
+}
+
+.mapa-box {
+    margin-top: 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    background: #eee;
+}
+
+footer {
+    background-color: #000;
+    color: #888;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #ce1126; /* Línea superior roja */
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
